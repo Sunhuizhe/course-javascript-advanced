@@ -22,7 +22,7 @@ console.log(returnValue);
 
 // Array.prototype.some(callback,thisValue?)//返回一个布尔类型 若有一部分满足的将不再进行后续判断，直接返回true
 var arr2= [2,5,8];//[2,4,6]
-var returnValue = arr2.some(function (a) {//判断数组元素是否都是偶数，若有不满足的将不再进行后续判断
+var returnValue = arr2.some(function (a) {//判断数组元素是否都是偶数，若有满足的将不再进行后续判断
     return a%2===0;
 });
 console.log(returnValue);

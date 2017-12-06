@@ -6,7 +6,7 @@
 var date1 = new Date(2017,9,18,12,34,1);//注意：月0-11，日：1-31，时：0-23，分：0-59，秒：0-59，毫秒：0-999
 console.log(date1);
 
-var date2 = new Date(17,9,18,12,34,1);//若years为2位的话自动加1900
+var date2 = new Date(17,8,18,12,34,1);//若years为2位的话自动加1900
 console.log(date2);
 
 var date3 = new Date("2017-08-09");//注意日期的格式 此处的08代表8月还是9月，对比上一个创建形式

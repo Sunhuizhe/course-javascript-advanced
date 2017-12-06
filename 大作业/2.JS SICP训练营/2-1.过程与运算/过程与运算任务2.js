@@ -1,4 +1,4 @@
-//任务二//
+//任务二-1//
 // 在fib函数中填入代码，返回菲波那契数列的第n个数的值。
 // 菲波那契数列是指每一位都是前两位相加之和的一个数列，一个有限的菲波那契数列如下所示
 // 0 1 1 2 3 5 8 13 ...
@@ -30,3 +30,39 @@ console.log(fib(3));
 console.log(fib(4));
 console.log(fib(5));
 console.log(fib(6));
+
+//任务二-2//
+// 在fib函数中填入代码，返回菲波那契数列的第n个数的值。
+// 菲波那契数列是指每一位都是前面所有数相加之和的一个数列，一个有限的菲波那契数列如下所示
+// 0 1 1 2 4 8 16 ...
+function fib(n){
+    var result=0;
+    var arr = [];
+    arr[0]=0;
+    arr[1]=1;
+    if(n<2) return arr[n];
+	else{
+		for(var i=1;i<n;i++){
+	        result += arr[i];
+	        arr[i+1]=result;
+	    }
+	}
+    return result;
+}
+
+//任务二-3//
+// 在fib函数中填入代码，返回菲波那契数列的第n个数的值。
+// 菲波那契数列是指每一位都是前三位相加之和的一个数列，一个有限的菲波那契数列如下所示
+// 0 1 2 3 6 11 20 ...
+function fib(n){
+    var result=0;
+    var arr = [0,1,2];
+    if(n<=3) return arr[n-1];
+	else{
+		for(var i=3;i<n;i++){
+	        result = arr[i-3] + arr[i-1] +arr[i-2];
+	        arr[i]=result;
+	    }
+	}
+    return result;
+}

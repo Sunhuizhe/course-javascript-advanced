@@ -18,7 +18,7 @@ var c = a+b;
 //String.prototype.charAt(pos);
 //String.prototype.charCodeAt(pos);
 //String.prototype.slice(start,end?);
-//String.prototype.substr(start,length?)
+//String.prototype.substr(start,length?);
 //String.prototype.substring(start,end?);
 //String.prototype.split(separator?,limit?);
 
