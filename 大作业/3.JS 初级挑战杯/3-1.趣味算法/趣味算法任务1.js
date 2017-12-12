@@ -31,7 +31,7 @@ function hundred_hundred_chickens()
         for(b=0;b<(100-5*a)/3;b++)        //母鸡可能的只数
         {  c=100-a-b;                //总数为100时，小鸡的只数
             if(c%3==0 && a*5+b*3+c/3==100)         //若小鸡只数是3的倍数，且总价为100
-                arr_result.push({cock:a,hen:b,chicken:c})
+            arr_result.push({cock:a,hen:b,chicken:c})
         }
     return arr_result;
 }
